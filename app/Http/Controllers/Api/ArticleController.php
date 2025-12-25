@@ -20,6 +20,7 @@ class ArticleController extends Controller
         return response()->json([
             'status' => true,
             'data' => [
+                'current_page' => $articles->currentPage(),
                 'per_page'     => $articles->perPage(),
                 'total'        => $articles->total(),
                 'data'         => $articles->items(),
