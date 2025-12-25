@@ -10,7 +10,7 @@ use App\Models\Article;
 class ScrapeBeyondChatsBlogs extends Command
 {
     protected $signature = 'scrape:beyondchats';
-    protected $description = 'Automatically scrape 5 oldest BeyondChats blog articles from last page';
+    protected $description = 'Automatically scrape last 5 oldest BeyondChats blog articles from last page';
 
     public function handle()
     {
